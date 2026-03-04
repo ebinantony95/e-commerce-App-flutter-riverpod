@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999975841782",
+    "project_id": "sneakcom-97cb1",
+    "storage_bucket": "sneakcom-97cb1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999975841782:android:bb70bcd585b15c279ca1d7",
+        "android_client_info": {
+          "package_name": "com.example.sneakcom_ecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAedGFQwV6mZZX55of0mJp1AZieUh9Ho1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

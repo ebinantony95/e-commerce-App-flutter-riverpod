@@ -1,0 +1,24 @@
+import 'package:flutter_riverpod/legacy.dart';
+
+final onboardingProver =
+    StateNotifierProvider.autoDispose<OnboardingController, int>((ref) {
+      return OnboardingController();
+    });
+
+class OnboardingController extends StateNotifier<int> {
+  OnboardingController() : super(0);
+
+  void setPage(int index) {
+    state = index;
+  }
+
+  void nextPage(int totalPages) {
+    if (state < totalPages - 1) {
+      state++;
+    }
+  }
+
+  void skipToEnd(int totalPages) {
+    state = totalPages - 1;
+  }
+}
