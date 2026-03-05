@@ -1,40 +1,45 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sneakcom_ecom/common/reusable_widgets/logo_sen.dart';
 import 'package:sneakcom_ecom/common/styles/dark_overlay.dart';
-import 'package:sneakcom_ecom/features/authencation/core/screen_controllers/auth_controller.dart';
+import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_controller.dart';
 import 'package:sneakcom_ecom/util/constants/images.dart';
 import 'package:sneakcom_ecom/util/constants/sizes.dart';
 import 'package:sneakcom_ecom/util/constants/text_strings.dart';
 import 'package:sneakcom_ecom/util/helpers/helpers.dart';
 import 'package:sneakcom_ecom/util/validators/auth_validators.dart';
 
-class Login extends ConsumerStatefulWidget {
-  const Login({super.key});
+class CreateAccount extends ConsumerStatefulWidget {
+  const CreateAccount({super.key});
 
   @override
-  ConsumerState<Login> createState() => _LoginState();
+  ConsumerState<CreateAccount> createState() => _CreateAccountState();
 }
 
-class _LoginState extends ConsumerState<Login> {
+class _CreateAccountState extends ConsumerState<CreateAccount> {
   // global form key to identify the state changes in the form
   final _formKey = GlobalKey<FormState>();
-
   // text editing controllers
+  late final TextEditingController nameController;
   late final TextEditingController emailController;
   late final TextEditingController passwordController;
+
   @override
   void initState() {
     super.initState();
+    nameController = TextEditingController();
     emailController = TextEditingController();
     passwordController = TextEditingController();
   }
 
   @override
   void dispose() {
+    nameController.dispose();
     emailController.dispose();
     passwordController.dispose();
+
     super.dispose();
   }
 
@@ -47,31 +52,40 @@ class _LoginState extends ConsumerState<Login> {
         key: _formKey,
         child: Stack(
           children: [
-            // background image
+            // background image.....................
             Positioned.fill(
               child: Image.asset(
                 isdark ? Myimages.getStartedDark : Myimages.getStartedLight,
                 fit: BoxFit.cover,
               ),
-            ), // dark overlay
+            ),
+            // dark overlay........................
             DarkOverlay(),
-
             Positioned(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
                   children: [
-                    SizedBox(height: 100),
-                    // logo.......
                     LogoSen(),
+                    // name..........
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      child: TextFormField(
+                        controller: nameController,
+                        validator: AuthValidators.name,
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                          hint: Text(Textstrings.name),
+                        ),
+                      ),
+                    ),
 
+                    SizedBox(height: AppSizes.spaceBWfields),
                     // email filed.......
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.75,
                       child: TextFormField(
                         controller: emailController,
-                        style: TextStyle(color: Colors.white),
-
                         validator: AuthValidators.email,
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
@@ -79,15 +93,12 @@ class _LoginState extends ConsumerState<Login> {
                         ),
                       ),
                     ),
-
                     // password.......
                     SizedBox(height: AppSizes.spaceBWfields),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.75,
                       child: TextFormField(
                         controller: passwordController,
-                        style: TextStyle(color: Colors.white),
-
                         validator: AuthValidators.password,
                         obscureText: true,
                         decoration: InputDecoration(
@@ -97,7 +108,7 @@ class _LoginState extends ConsumerState<Login> {
                     ),
                     SizedBox(height: AppSizes.spaceBWfields * 2),
 
-                    // login button..........
+                    // create acc button..........
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.75,
                       child: ElevatedButton(
@@ -108,40 +119,44 @@ class _LoginState extends ConsumerState<Login> {
                                 try {
                                   await ref
                                       .read(authColtrollerProvider.notifier)
-                                      .login(
+                                      .createAcc(
                                         email: emailController.text.trim(),
                                         password: passwordController.text
                                             .trim(),
+                                        name: nameController.text.trim(),
                                       );
-                                } catch (e) {
+                                } on FirebaseAuthException catch (e) {
                                   ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      content: Text(
-                                        "Enter valid email and password",
-                                      ),
-                                      backgroundColor: Colors.red,
-                                      behavior: SnackBarBehavior.floating,
-                                    ),
+                                    SnackBar(content: Text(e.message!)),
                                   );
                                 }
                               },
-                        child: Text(Textstrings.login),
+                        child: isLoading
+                            ? CircularProgressIndicator()
+                            : Text(Textstrings.createACC),
                       ),
                     ),
                     SizedBox(height: AppSizes.spaceBWfields),
 
-                    // create acc .............
+                    SizedBox(height: AppSizes.spaceBWfields * 2),
+
+                    // already have acc........
+                    Text(
+                      Textstrings.alreayHaveACC,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    SizedBox(height: AppSizes.spaceBWfields),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.75,
+                      width: MediaQuery.of(context).size.width * 0.30,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: isdark ? Colors.white : Colors.black,
                         ),
                         onPressed: () {
-                          context.goNamed('createAcc');
+                          context.goNamed('login');
                         },
                         child: Text(
-                          Textstrings.createACC,
+                          Textstrings.login,
                           style: TextStyle(
                             color: isdark ? Colors.black : Colors.white,
                           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sneakcom_ecom/common/buttons/add_to_cart/show_size_selection_dialog.dart';
-import 'package:sneakcom_ecom/features/authencation/core/screen_controllers/auth_stateprovier.dart';
+import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_stateprovier.dart';
 import 'package:sneakcom_ecom/features/bag/core/provider/cart_notifier.dart';
 import 'package:sneakcom_ecom/features/product_detailed/size_chart/core/provider/selected_size_provider.dart';
 import 'package:sneakcom_ecom/features/store/product_grid/core/model/product_model.dart';

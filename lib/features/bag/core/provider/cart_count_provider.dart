@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/authencation/core/screen_controllers/auth_stateprovier.dart';
+import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_stateprovier.dart';
 import 'package:sneakcom_ecom/features/bag/core/provider/cart_stream_provider.dart';
 
 final cartCountProvider = Provider<int>((ref) {

@@ -1,6 +1,6 @@
 // creating a stream of user - streamprovider
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/authencation/core/model/user_model.dart';
+import 'package:sneakcom_ecom/features/authentication/core/model/user_model.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 

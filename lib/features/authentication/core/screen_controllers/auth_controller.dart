@@ -3,8 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
-import 'package:sneakcom_ecom/features/authencation/core/model/user_model.dart';
-import 'package:sneakcom_ecom/features/authencation/core/screen_controllers/auth_provider.dart';
+import 'package:sneakcom_ecom/features/authentication/core/model/user_model.dart';
+import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_provider.dart';
 
 final authColtrollerProvider = StateNotifierProvider<AuthController, bool>((
   ref,
