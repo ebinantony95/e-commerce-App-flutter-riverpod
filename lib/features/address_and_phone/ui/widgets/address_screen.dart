@@ -114,6 +114,7 @@ class _AddressScreenState extends ConsumerState<AddressScreen> {
 
                       await saveAddress(address);
 
+                      // ignore: use_build_context_synchronously
                       context.pop();
                     }
                   },

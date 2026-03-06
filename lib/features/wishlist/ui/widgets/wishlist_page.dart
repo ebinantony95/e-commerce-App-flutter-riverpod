@@ -26,19 +26,6 @@ class WishlistPage extends ConsumerWidget {
                 width: MediaQuery.of(context).size.width,
                 child: Stack(
                   children: [
-                    Positioned(
-                      left: 2,
-                      top: 2,
-                      child: // Remove Button
-                      IconButton(
-                        icon: const Icon(Icons.close),
-                        onPressed: () {
-                          ref
-                              .read(wishlistServiceProvider)
-                              .removeFromWishlist(item.productId);
-                        },
-                      ),
-                    ),
                     Row(
                       children: [
                         Expanded(
@@ -71,6 +58,19 @@ class WishlistPage extends ConsumerWidget {
                                 ],
                               ),
                             ],
+                          ),
+                        ),
+                        Positioned(
+                          left: 2,
+                          top: 2,
+                          child: // Remove Button
+                          IconButton(
+                            icon: const Icon(Icons.close_sharp),
+                            onPressed: () {
+                              ref
+                                  .read(wishlistServiceProvider)
+                                  .removeFromWishlist(item.productId);
+                            },
                           ),
                         ),
                       ],

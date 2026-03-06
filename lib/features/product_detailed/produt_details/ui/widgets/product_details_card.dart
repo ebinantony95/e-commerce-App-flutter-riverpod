@@ -16,6 +16,7 @@ class ProductDetailsCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // ignore: avoid_print
     print("Sizes from product: ${product.sizes}");
     final dark = Helpers.isDarkMode(context);
     return Scaffold(

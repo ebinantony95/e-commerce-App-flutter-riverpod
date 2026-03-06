@@ -36,6 +36,7 @@ class ProductGridSection extends ConsumerWidget {
         child: Center(child: CircularProgressIndicator()),
       ),
       error: (e, _) {
+        // ignore: avoid_print
         print("firestore error: $e");
         return SliverFillRemaining(
           child: Center(child: Text("Something went wrong")),
