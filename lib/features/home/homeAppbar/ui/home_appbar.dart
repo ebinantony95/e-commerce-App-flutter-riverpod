@@ -3,7 +3,7 @@ import 'package:sneakcom_ecom/features/home/homeAppbar/ui/widgets/menu_icon.dart
 import 'package:sneakcom_ecom/features/home/homeAppbar/ui/widgets/notification_icon.dart';
 import 'package:sneakcom_ecom/features/home/homeAppbar/ui/widgets/searchbar.dart';
 import 'package:sneakcom_ecom/features/home/homeAppbar/ui/widgets/wishlist_icon.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 class HomeAppbar extends StatelessWidget {
   final VoidCallback onMenuTap;

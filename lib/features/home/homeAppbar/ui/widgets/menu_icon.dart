@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class MenuIcon extends StatelessWidget {
   final VoidCallback onpressed;

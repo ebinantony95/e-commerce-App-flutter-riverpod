@@ -1,4 +1,4 @@
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 class MenuModel {
   final String name;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/buttons/buynow_button.dart';
+import 'package:sneakcom_ecom/shared/buttons/buynow_button.dart';
 import 'package:sneakcom_ecom/features/bag/core/provider/cart_stream_provider.dart';
 import 'package:sneakcom_ecom/features/bag/ui/widgets/cart_item.dart';
 import 'package:sneakcom_ecom/features/buynow/core/models/buy_now_nodel.dart';

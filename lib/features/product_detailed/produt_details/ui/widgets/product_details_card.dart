@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/buttons/add_to_cart/add_to_cart_button.dart';
-import 'package:sneakcom_ecom/common/buttons/buynow_button.dart';
+import 'package:sneakcom_ecom/shared/buttons/add_to_cart/add_to_cart_button.dart';
+import 'package:sneakcom_ecom/shared/buttons/buynow_button.dart';
 import 'package:sneakcom_ecom/features/buynow/core/models/buy_now_nodel.dart';
 import 'package:sneakcom_ecom/features/product_detailed/size_chart/core/provider/selected_size_provider.dart';
 import 'package:sneakcom_ecom/features/product_detailed/size_chart/ui/size_selector.dart';
 import 'package:sneakcom_ecom/features/store/product_grid/data/model/product_model.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class ProductDetailsCard extends ConsumerWidget {
   final ProductModel product;

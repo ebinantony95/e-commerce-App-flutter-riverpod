@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sneakcom_ecom/features/payment%20screen/data/models/payment_model.dart';
 import 'package:sneakcom_ecom/features/payment%20screen/data/provider/user_provider.dart';
 import 'package:sneakcom_ecom/features/payment%20screen/ui/payment_success_message.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
 
 class PaymentScreen extends ConsumerStatefulWidget {
   final CheckoutModel checkout;

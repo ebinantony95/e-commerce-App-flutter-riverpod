@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/navigators/routers/app_routers.dart';
-import 'package:sneakcom_ecom/util/theme/theme.dart';
+import 'package:sneakcom_ecom/core/navigators/routers/app_routers.dart';
+import 'package:sneakcom_ecom/core/util/theme/theme.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});

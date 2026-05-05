@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
-import 'package:sneakcom_ecom/util/constants/text_strings.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/constants/text_strings.dart';
 
 class HeadingsWithViewall extends StatelessWidget {
   const HeadingsWithViewall({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 void showPaymentSuccessDialog(BuildContext context) {
   showDialog(

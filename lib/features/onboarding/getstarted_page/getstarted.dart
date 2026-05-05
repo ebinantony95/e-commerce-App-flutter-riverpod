@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/styles/dark_overlay.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
-import 'package:sneakcom_ecom/util/constants/sizes.dart';
-import 'package:sneakcom_ecom/util/constants/text_strings.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/shared/styles/dark_overlay.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/sizes.dart';
+import 'package:sneakcom_ecom/core/util/constants/text_strings.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class Getstarted extends StatelessWidget {
   const Getstarted({super.key});

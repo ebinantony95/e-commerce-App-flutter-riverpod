@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sneakcom_ecom/features/store/menu_section/data/model/menu_model.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
 
 class MenuCard extends StatelessWidget {
   final MenuModel menu;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/common/icons/icons.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/shared/icons/icons.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class NotificationIcon extends StatelessWidget {
   const NotificationIcon({super.key});

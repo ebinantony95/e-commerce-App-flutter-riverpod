@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/util/theme/custom_themes/app_navbartheme.dart';
-import 'package:sneakcom_ecom/util/theme/custom_themes/app_texttheme.dart';
-import 'package:sneakcom_ecom/util/theme/custom_themes/elevatedbutton_theme.dart';
-import 'package:sneakcom_ecom/util/theme/custom_themes/textfirmfield_thme.dart';
+import 'package:sneakcom_ecom/core/util/theme/custom_themes/app_navbartheme.dart';
+import 'package:sneakcom_ecom/core/util/theme/custom_themes/app_texttheme.dart';
+import 'package:sneakcom_ecom/core/util/theme/custom_themes/elevatedbutton_theme.dart';
+import 'package:sneakcom_ecom/core/util/theme/custom_themes/textfirmfield_thme.dart';
 
 class AppTheme {
   AppTheme._();

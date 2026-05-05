@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sneakcom_ecom/features/home/banners/core/banner_index_provider.dart';
 import 'package:sneakcom_ecom/features/home/banners/ui/widgets/app_sub_banners.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 class AppBanners extends ConsumerWidget {
   const AppBanners({super.key});

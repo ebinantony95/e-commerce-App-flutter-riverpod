@@ -17,7 +17,7 @@ import 'package:sneakcom_ecom/features/payment%20screen/ui/payment_screen.dart';
 import 'package:sneakcom_ecom/features/product_detailed/produt_details/ui/product_details_page.dart';
 import 'package:sneakcom_ecom/features/store/store.dart';
 import 'package:sneakcom_ecom/features/wishlist/ui/widgets/wishlist_page.dart';
-import 'package:sneakcom_ecom/navigators/bottomNAVbar/bottom_navshell.dart';
+import 'package:sneakcom_ecom/core/navigators/bottomNAVbar/bottom_navshell.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateProvider);

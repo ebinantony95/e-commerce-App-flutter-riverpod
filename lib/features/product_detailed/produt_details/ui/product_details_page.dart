@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/features/product_detailed/produt_details/core/provider/product_detalis_provider.dart';
+import 'package:sneakcom_ecom/features/product_detailed/produt_details/data/provider/product_detalis_provider.dart';
 import 'package:sneakcom_ecom/features/product_detailed/produt_details/ui/widgets/product_details_card.dart';
 
 class ProductDetailsPage extends ConsumerWidget {

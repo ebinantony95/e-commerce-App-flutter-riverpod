@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 class AppSubBanners extends StatelessWidget {
   const AppSubBanners({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sneakcom_ecom/features/wishlist/ui/widgets/wishlist_icon.dart';
-import 'package:sneakcom_ecom/common/buttons/add_to_cart/add_to_cart_button.dart';
+import 'package:sneakcom_ecom/shared/buttons/add_to_cart/add_to_cart_button.dart';
 import 'package:sneakcom_ecom/features/store/product_grid/data/model/product_model.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;

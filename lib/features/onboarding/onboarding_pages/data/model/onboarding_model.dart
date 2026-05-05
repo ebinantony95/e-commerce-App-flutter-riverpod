@@ -1,5 +1,5 @@
-import 'package:sneakcom_ecom/util/constants/images.dart';
-import 'package:sneakcom_ecom/util/constants/text_strings.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/text_strings.dart';
 
 class OnboardingModel {
   final String title;

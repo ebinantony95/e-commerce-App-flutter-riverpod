@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
 
 class LogoSen extends StatelessWidget {
   const LogoSen({super.key});

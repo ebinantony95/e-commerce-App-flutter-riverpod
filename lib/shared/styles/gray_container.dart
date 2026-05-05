@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class GrayContainer extends StatelessWidget {
   const GrayContainer({super.key});

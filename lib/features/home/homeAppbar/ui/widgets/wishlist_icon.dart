@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/icons/icons.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/shared/icons/icons.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
 
 class WishlistIcon extends StatelessWidget {
   const WishlistIcon({super.key});

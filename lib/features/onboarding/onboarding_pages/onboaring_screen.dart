@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/styles/dark_overlay.dart';
+import 'package:sneakcom_ecom/shared/styles/dark_overlay.dart';
 import 'package:sneakcom_ecom/features/onboarding/onboarding_pages/data/screen_controllers/onboarding_controller.dart';
 import 'package:sneakcom_ecom/features/onboarding/onboarding_pages/data/model/onboarding_model.dart';
-import 'package:sneakcom_ecom/util/constants/sizes.dart';
+import 'package:sneakcom_ecom/core/util/constants/sizes.dart';
 
 class OnboaringScreen extends ConsumerWidget {
   OnboaringScreen({super.key});

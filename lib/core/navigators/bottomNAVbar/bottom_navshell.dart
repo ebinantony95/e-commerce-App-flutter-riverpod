@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sneakcom_ecom/features/bag/core/provider/cart_count_provider.dart';
-import 'package:sneakcom_ecom/util/constants/sizes.dart';
+import 'package:sneakcom_ecom/core/util/constants/sizes.dart';
 
 class BottomNavshell extends ConsumerWidget {
   final Widget child;

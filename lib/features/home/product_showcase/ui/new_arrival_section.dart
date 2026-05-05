@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/home/product_showcase/core/providers/new_arrival_provider.dart';
-import 'package:sneakcom_ecom/common/buttons/add_to_cart/add_to_cart_button.dart';
-import 'package:sneakcom_ecom/util/constants/colors.dart';
+import 'package:sneakcom_ecom/features/home/product_showcase/data/providers/new_arrival_provider.dart';
+import 'package:sneakcom_ecom/shared/buttons/add_to_cart/add_to_cart_button.dart';
+import 'package:sneakcom_ecom/core/util/constants/colors.dart';
 
 class NewArrivalSection extends ConsumerWidget {
   const NewArrivalSection({super.key});

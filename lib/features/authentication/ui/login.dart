@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sneakcom_ecom/common/reusable_widgets/logo_sen.dart';
-import 'package:sneakcom_ecom/common/styles/dark_overlay.dart';
+import 'package:sneakcom_ecom/shared/reusable_widgets/logo_sen.dart';
+import 'package:sneakcom_ecom/shared/styles/dark_overlay.dart';
 import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_controller.dart';
-import 'package:sneakcom_ecom/util/constants/images.dart';
-import 'package:sneakcom_ecom/util/constants/sizes.dart';
-import 'package:sneakcom_ecom/util/constants/text_strings.dart';
-import 'package:sneakcom_ecom/util/helpers/helpers.dart';
-import 'package:sneakcom_ecom/util/validators/auth_validators.dart';
+import 'package:sneakcom_ecom/core/util/constants/images.dart';
+import 'package:sneakcom_ecom/core/util/constants/sizes.dart';
+import 'package:sneakcom_ecom/core/util/constants/text_strings.dart';
+import 'package:sneakcom_ecom/core/util/helpers/helpers.dart';
+import 'package:sneakcom_ecom/core/util/validators/auth_validators.dart';
 
 class Login extends ConsumerStatefulWidget {
   const Login({super.key});
