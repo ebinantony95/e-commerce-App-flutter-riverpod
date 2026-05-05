@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/store/product_grid/core/model/product_model.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/model/wishlist_model.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/provider/wishlist_service_provider.dart';
+import 'package:sneakcom_ecom/features/store/product_grid/data/model/product_model.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/model/wishlist_model.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/provider/wishlist_service_provider.dart';
 
 class WishlistIcon extends ConsumerWidget {
   final ProductModel productModel;

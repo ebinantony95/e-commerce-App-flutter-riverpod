@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/onboarding/onboarding_pages/core/services/onboarding_service.dart';
+import 'package:sneakcom_ecom/features/onboarding/onboarding_pages/data/services/onboarding_service.dart';
 
 final onboardingServiceProvider = Provider<OnboardingService>((ref) {
   return OnboardingService();

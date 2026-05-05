@@ -4,7 +4,7 @@ import 'package:sneakcom_ecom/common/buttons/add_to_cart/show_size_selection_dia
 import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_stateprovier.dart';
 import 'package:sneakcom_ecom/features/bag/core/provider/cart_notifier.dart';
 import 'package:sneakcom_ecom/features/product_detailed/size_chart/core/provider/selected_size_provider.dart';
-import 'package:sneakcom_ecom/features/store/product_grid/core/model/product_model.dart';
+import 'package:sneakcom_ecom/features/store/product_grid/data/model/product_model.dart';
 import 'package:sneakcom_ecom/util/constants/colors.dart';
 
 class AddToCartButton extends ConsumerWidget {

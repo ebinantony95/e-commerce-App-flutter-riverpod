@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/store/menu_section/core/providers/selected_brand_provider.dart';
-import 'package:sneakcom_ecom/features/store/product_grid/core/model/product_model.dart';
+import 'package:sneakcom_ecom/features/store/menu_section/data/providers/selected_brand_provider.dart';
+import 'package:sneakcom_ecom/features/store/product_grid/data/model/product_model.dart';
 
 final filteredProductProvider = StreamProvider<List<ProductModel>>((ref) {
   //state provider to know which brand selected

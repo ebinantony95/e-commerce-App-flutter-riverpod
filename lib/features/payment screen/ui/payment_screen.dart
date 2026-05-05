@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/payment%20screen/core/models/payment_model.dart';
-import 'package:sneakcom_ecom/features/payment%20screen/core/provider/user_provider.dart';
+import 'package:sneakcom_ecom/features/payment%20screen/data/models/payment_model.dart';
+import 'package:sneakcom_ecom/features/payment%20screen/data/provider/user_provider.dart';
 import 'package:sneakcom_ecom/features/payment%20screen/ui/payment_success_message.dart';
 import 'package:sneakcom_ecom/util/constants/colors.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/provider/wishlist_service_provider.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/provider/wishlist_service_provider.dart';
 
 class WishlistPage extends ConsumerWidget {
   const WishlistPage({super.key});

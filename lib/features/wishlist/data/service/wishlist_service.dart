@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/model/wishlist_model.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/model/wishlist_model.dart';
 
 class WishlistService {
   final FirebaseFirestore firestore;

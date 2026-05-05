@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sneakcom_ecom/features/authentication/core/screen_controllers/auth_provider.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/model/wishlist_model.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/provider/firebase_firestore_provider.dart';
-import 'package:sneakcom_ecom/features/wishlist/core/service/wishlist_service.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/model/wishlist_model.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/provider/firebase_firestore_provider.dart';
+import 'package:sneakcom_ecom/features/wishlist/data/service/wishlist_service.dart';
 
 final wishlistServiceProvider = Provider<WishlistService>((ref) {
   final firestore = ref.read(firebaseFirestoreProvider);

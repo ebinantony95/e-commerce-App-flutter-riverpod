@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sneakcom_ecom/features/store/product_grid/core/provider/filtered_product_provider.dart';
+import 'package:sneakcom_ecom/features/store/product_grid/data/provider/filtered_product_provider.dart';
 import 'package:sneakcom_ecom/features/store/product_grid/ui/widget/product_card.dart';
 
 class ProductGridSection extends ConsumerWidget {
